@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h4 {
+  font-family: "SangBleu Sunrise";
+}
+
+h2 {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+h4 {
+  font-size: 26px;
+  line-height: 34px;
+  margin-bottom: 40px;
+}
+
+p {
+  font-family: "Sofia Pro";
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 70%;
+  font-weight: 300;
+}
+
+.top {
+  height: 60vh;
+  background: #d4d7dd;
+}
+
+.bottom {
+  height: 80vh;
+  background: #e2d7d2;
+}
+
+.container {
+  width: 1177px;
+  margin: 0 auto;
+}
+
+.main {
+  padding: 80px 0;
+  background: #37384c;
+  color: #fff;
+}
+
+.card {
+  .section {
+    padding: 80px 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+
+  .section1 {
+    background: #414256;
+  }
+  .section2 {
+    background: #4b4c60;
+  }
+  .section3 {
+    background: #55566a;
+  }
+
+  .card_box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .image {
+    width: 40%;
+    position: relative;
+
+    .sr-only {
+      clip: rect(0 0 0 0);
+      -webkit-clip-path: inset(100%);
+      clip-path: inset(100%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute !important;
+      white-space: nowrap;
+      width: 1px;
+      margin-top: -1px;
+    }
+
+    img {
+      width: 80%;
+
+      height: 271px;
+      object-fit: cover;
+    }
+  }
+
+  .content {
+    width: 60%;
+  }
+}
