@@ -42,6 +42,7 @@ p {
 }
 
 .bottom {
+  margin-top: -300px;
   height: 80vh;
   background: #e2d7d2;
 }
@@ -52,9 +53,28 @@ p {
 }
 
 .main {
-  padding: 80px 0;
-  background: #37384c;
+  padding: 80px 0 0;
   color: #fff;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background: #37384c;
+    content: "";
+    top: 0;
+    left: 0;
+  }
+}
+
+.head {
+  position: relative;
+  z-index: 2;
+}
+
+.wrap {
+  margin-top: 120px;
 }
 
 .card {
@@ -72,6 +92,8 @@ p {
   }
   .section3 {
     background: #55566a;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
   }
 
   .card_box {
