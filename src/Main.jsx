@@ -27,7 +27,13 @@ const Main = () => {
 
   useEffect(() => {
     cardRrefs.current.forEach((ref, index) => {
-      let start = 100 - index * 35;
+      let start;
+
+      let windowWidth = window.innerWidth;
+
+      if (windowWidth < 1720) {
+        start = 80 - index * 35;
+      } else start = 100 - index * 35;
 
       gsap.fromTo(
         ref,
@@ -44,7 +50,6 @@ const Main = () => {
             end: "bottom bottom",
             pin: true,
             pinSpacing: false,
-            // markers: true,
             scrub: true,
           },
           yPercent: -35,
